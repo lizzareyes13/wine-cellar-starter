@@ -1,11 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Angular Cellar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angular Wine Cellar</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/styles.css" />
+<script src="app.js"></script>
 </head>
 
-<body>
-
+<body ng-controller="routeCtrl">
+  <div id="header">
+    Angular Cellar
+    <button ng:click="addWine()">Add Wine</button>
+  </div>
+  <div id="sidebar"></div>
+  <div id="content">
+    <input type="text" name="search">
+    <button type="button">Search</button>
+    <button type="button">New Wine</button>
+  </div>
 </body>
 </html>

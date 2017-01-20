@@ -1,0 +1,20 @@
+{
+  "name": "wine-cellar-starter",
+  "version": "1.0.0",
+  "description": "This is sample CRUD application for a wine cellar company. The application is old, and was developed long ago. All that remains is the sample wine table, and some started data from an sql dump. Your challenge is to update this app using angular.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizzareyes13/wine-cellar-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizzareyes13/wine-cellar-starter/issues"
+  },
+  "homepage": "https://github.com/lizzareyes13/wine-cellar-starter#readme"
+}
