@@ -5,9 +5,6 @@
 <title>Wine Cellar - AngularJS</title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="CSS/styles.css" />
-<script src="libs/angular.js/1.6.1/angular-animate.js" ng:autobind></script>
-<script src="JS/services.js"></script>
-<script src="JS/controller.js"></script>
 </head>
 
 <body ng-controller="routeCtrl">
@@ -16,10 +13,12 @@
     <button ng:click="addWine()">Add Wine</button>
   </div>
   <div id="sidebar"></div>
-      <ng:include src="'tpl-wine-list.html'"></ng:include>
+      <ng:include src="wine-list.html"></ng:include>
   <div id="content">
     <ng:view></ng:view>
   </div>
-  </script>
+  <script src="lib/angular.js/1.6.1/angular-animate.js" ng:autobind></script>
+  <script src="JS/services.js"></script>
+  <script src="JS/controller.js"></script>
 </body>
 </html>

@@ -1,8 +1,7 @@
 function $routeCtrl($route){
   var self = this;
-  $route.when('/', {template:'index.html'})
   $route.when('/wines', {template:'templates/welcome.html'});
-  $route.when('/wines/:wineId', {template:'templates/wine-details.html', controller:WineDetailCtrl});
+  $route.when('/wines/:wineId', {template:'emplates/wine-details.html', controller:WineDetailCtrl});
   $route.otherwise({redirectTo:'/wines'});
 
   $route.onChange(function(){
