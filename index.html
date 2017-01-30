@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:ng="http://angularjs.org">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angular Wine Cellar</title>
+<title>Wine Cellar - AngularJS</title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/styles.css" />
-<script src="app.js"></script>
+<link rel="stylesheet" href="CSS/styles.css" />
+<script src="libs/angular.js/1.6.1/angular-animate.js" ng:autobind></script>
+<script src="JS/services.js"></script>
+<script src="JS/controller.js"></script>
 </head>
 
 <body ng-controller="routeCtrl">
@@ -14,10 +16,10 @@
     <button ng:click="addWine()">Add Wine</button>
   </div>
   <div id="sidebar"></div>
+      <ng:include src="'tpl-wine-list.html'"></ng:include>
   <div id="content">
-    <input type="text" name="search">
-    <button type="button">Search</button>
-    <button type="button">New Wine</button>
+    <ng:view></ng:view>
   </div>
+  </script>
 </body>
 </html>
